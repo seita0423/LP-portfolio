@@ -1,0 +1,260 @@
+
+
+/* ヘッダー */
+header {
+  height: 1000px;
+}
+.icon {
+  position:absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  color: #fff;
+}
+.icon  {
+  font-size: 40px;
+}
+.icon p{
+font-size: 10px;
+}
+.header h1{
+padding: 60px  0  0px 140px;
+}
+.header ul {
+  padding: 64px;
+  display: flex;
+
+}
+.header li {
+  padding: 24px;
+}
+.header_nav {
+  z-index: 2; 
+ position: absolute;
+  top: 0px;
+  right: 0px;
+  color: #fff;
+}
+
+/* スライドショー */
+.slide {
+  /* position: relative; */
+  width: 100%;
+  padding-top: 9%;
+}
+
+.slide img {
+  position: absolute;
+  width: 100%; 
+  height: 1000px;
+  top: 0;
+   left: 0;
+   opacity: 0;
+   animation: slideshow 20s linear infinite;
+}
+.slide img:nth-child(2) {
+  animation-delay: 5s;
+}
+.slide img:nth-child(3) {
+  animation-delay: 10s;
+}
+.slide img:nth-child(4) {
+  animation-delay: 15s;
+}
+
+@keyframes slideshow {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  28% {
+    opacity: 1;
+  }
+  38% {
+opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+/* 文字セクション */
+.tabi {
+padding: 60px;
+background-color: rgb(245, 245, 245);
+}
+.tabi_width {
+  width: 400px;
+margin: 0 auto;
+}
+.tabi h2 {
+  padding: 40px;
+  font-size: 50px;
+}
+.tabi p {
+  font-size: 20px;
+  padding: 16px;
+  line-height: 32px;
+
+}
+.tabi p,h2{
+text-align: left;
+}
+.tabi div {
+  padding-bottom: 60px;
+}
+.tabi_paspol {
+  font-size: 24px;
+}
+
+/* PRODUCTセクション */
+.product {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 80px 0 120px;
+}
+.section_head {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px;
+}
+.section_head h2 {
+  font-size: 32px;
+}
+.section_head a{
+border:  solid 1px #000;
+display: flex;
+align-items: center;
+width: 160px;
+justify-content: space-between;
+
+}
+
+.more {
+  margin:0 0 0 54px;
+}
+.more_p {
+  text-align: left;
+  padding: 8px;
+}
+.product_img {
+  max-width: 880px;
+display: flex;
+flex-wrap: wrap;
+margin: 0 auto;
+justify-content: space-between;
+
+}
+
+.product_raw {
+  width: 30%;
+  margin: 24px 0;
+  font-size: 24px;
+}
+
+.product_raw p {
+  padding: 20px 0 0;
+  margin: 0 20px;
+}
+/* ニュースセクション */
+.news {
+background-color: rgb(245, 245, 245);
+padding: 80px 0;
+  
+}
+.news_head {
+  display: flex;
+  justify-content: space-between;
+  padding: 60px 40px;
+  margin: 0 auto;
+  max-width: 960px;
+}
+.news_head h2 {
+  font-size: 32px;
+}
+.news_head a{
+border:  solid 1px #000;
+display: flex;
+align-items: center;
+width: 160px;
+justify-content: space-between;
+}
+.news_tab {
+  max-width: 880px;
+  margin: 0 auto;
+}
+.news_tab a {
+  display: flex;
+
+}
+.news_tab p {
+  width: 500px;
+  padding: 0 0 15px 15px;
+
+}
+.news_tab h2 {
+  font-size: 20px;
+  padding: 0 0 15px 15px;
+}
+.news_tab img {
+  padding: 0 15px 0 0;
+}
+.news_main {
+  padding: 20px 0;
+}
+
+/* SNSセクション */
+.sns {
+  text-align: center;
+  padding: 0 0 40px;
+}
+.mark {
+  padding: 0 0 40px;
+  width: 50px;
+  background-color: yellowgreen;
+  border: #000 solid 1px;
+  border-radius: 50%;
+  display: block;
+  margin: 0 auto;
+}
+ .sns.snslink {
+  display: flex;
+  text-align: center;
+}
+.facebook {
+  border: 2px solid darkblue;
+  color: darkblue;
+  padding: 16px;
+  margin: 8px;
+}
+.twitter {
+  border: 2px aqua solid;
+  color: aqua;
+  padding: 16px;
+  margin: 8px;
+}
+.bookmark {
+  border: 2px solid royalblue;
+  color: royalblue;
+  padding: 16px;
+  margin: 8px;
+}
+
+.bottom_nav {
+background-color: #bbb;
+}
+.bottom_nav ul{
+  display: flex;
+padding: 24px;
+justify-content: space-between;
+max-width: 500px;
+margin: 0 auto;
+}
+
+footer {
+background-color: #555;
+padding: 80px;
+font-size: 10px;
+}
