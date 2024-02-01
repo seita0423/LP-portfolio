@@ -12,13 +12,15 @@
     <header>
       <div class="header">
         <h1 class="icon">
-          <a href=""
-            >PAS-POL
-            <p>旅のモノづくりブランド</p></a
-          >
+          <a href="" class="header_a">
+           <img src="./img/ダウンロード (1).png" alt="" class="icon_img">
+           <div class="header_taitol">
+            PAS-POL
+            <p>旅のモノづくりブランド</p></div>
+          </a>
         </h1>
         <nav class="header_nav">
-          <ul>
+          <ul class="header_ul">
             <li><a href="TOP">TOP</a></li>
             <li><a href="PRODUCT">PRODUCT</a></li>
             <li><a href="ABOUT">ABOUT</a></li>
@@ -35,11 +37,35 @@
         <img src="./img/main_visual_13-0x0.jpeg" alt="" />
       </div>
       <!-- 画像の下を丸くしたい -->
+      <!-- ハンバーガー -->
+      <div id="nav_area">
+        <nav class="hb_nav">
+          <div class="inner">
+            <ul>
+              <li><a href="TOP">TOP</a></li>
+              <li><a href="PRODUCT">PRODUCT</a></li>
+              <li><a href="ABOUT">ABOUT</a></li>
+              <li><a href="NEWS">NEWS</a></li>
+              <li><a href="CONTACT">CONTACT</a></li>
+              <li><a href="#" class=" menu">MENU</a></li>
+            </ul>
+          </div>
+        </nav>
+        <div class="toggle_width">
+          <div class="toggle_btn">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+        <div id="mask"></div>
+  
+      </div>
     </header>
 
     <section class="tabi">
       <div class="tabi_width">
-        <h2>旅に出よう。</h2>
+        <h2 class="tabi_h2">旅に出よう。</h2>
         <p>
           僕たちが作りたいのは<br />
           持っているだけで旅に出たくなるモノ。<br />
@@ -56,8 +82,8 @@
           僕たちは、みんなでひとつのモノを<br />
           作ることを追求したい。
         </p>
-        <p>パスポル</p>
-        <h2 class="tabi_paspol">「PAS-POL」</h2>
+        <h3>パ ス ポ ル</h3>
+        <h2 class="tabi_paspol">「 PAS-POL 」</h2>
         <p>
           それは、自分と世界を繋げる<br />
           旅のモノづくりブランド
@@ -237,10 +263,18 @@
       </nav>
     </section>
     <footer>
-      <p>
-        Copyright &copy; 2024 PAS-POL -旅のモノづくりブランド-| TABIPPO ALL
-        rights reserved.
-      </p>
+      <div class="footer_width">
+        <div>
+          <img src="./img/ダウンロード (1).png" alt="" />
+          <h3>PAS-POL</h3>
+        </div>
+        <p>
+          Copyright &copy; 2024 PAS-POL -旅のモノづくりブランド-| TABIPPO ALL
+          rights reserved.
+        </p>
+      </div>
+
+      <script src="./JavaScript/main.js"></script>
     </footer>
   </body>
 </html>
