@@ -338,20 +338,25 @@ word-wrap: break-word;
 /* SNSセクション */
 .sns {
   text-align: center;
-  padding: 0 0 40px;
 }
 .mark {
-  padding: 0 0 40px;
-  width: 50px;
-  background-color: yellowgreen;
-  border: #000 solid 1px;
+  /* padding: 0px 0px; */
+  width: 60px;
+  font-size: 40px;
+  transform: rotate(-90deg);
+  background-color: #fff;
+  /* border: #000 solid 1px; */
   border-radius: 50%;
   display: block;
-  margin: 0 auto;
+  margin: -30px auto;
+  align-items: center;
+  transition: all 0.4s;
 }
- .sns.snslink {
+ .snslink {
+  padding: 72px 0 40px;
   /* display: flex; */
   text-align: center;
+  align-items: center;
 }
 .facebook {
   border: 2px solid darkblue;
@@ -371,9 +376,15 @@ word-wrap: break-word;
   padding: 16px;
   margin: 8px;
 }
-
+.line {
+  display: none;
+  border: 2px solid greenyellow;
+  color: greenyellow;
+  padding: 16px;
+  margin: 8px;
+}
 .bottom_nav {
-background-color: #bbb;
+background-color: #939899;
 }
 .bottom_nav ul{
   display: flex;
@@ -382,7 +393,10 @@ justify-content: space-between;
 max-width: 500px;
 margin: 0 auto;
 }
-
+.bottom_nav a {
+  color: #eee;
+padding: 16px;
+}
 footer {
 background-color: #555;
 padding: 80px;
@@ -433,22 +447,49 @@ footer h3 {
 }
 }
 @media screen and (max-width:780px){
-.product_img {
-  display: block;
-}
+
 .product_raw {
   display: flex;
+  width: 45%;
 }
 }
 @media screen and (max-width:700px){
   .tabi_width {
   margin: 0;
   }
-}
-@media screen and (max-width:580px){
-  .sns.snslink {
+  .footer_width {
     display: block;
+    text-align: center;
   }
+  .footer_width h3 {
+  padding-bottom: 24px;
+  }
+}
+@media screen and (max-width:600px){
+.sns_sp {
+  margin: 1px 0;
+}
+  .snslink a{
+    display:block;
+  }
+  .bottom_nav {
+    width: 100%;
+  }
+    .bottom_nav ul {
+      display: block;
+      text-align: center;
+max-width: 1000px;
+      padding: 0;
+    }
+    .bottom_nav li {
+      border: solid 1px #000;
+  width: 100%;
+  padding: 0px;
+    }
+.bottom_nav a {
+  /* width: 100%; */
+  display: block;
+}
 }
 @media screen and (max-width:500px){
 .tabi h2 {
